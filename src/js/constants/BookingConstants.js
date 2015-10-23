@@ -1,0 +1,22 @@
+var keyMirror = require('react/lib/keyMirror');
+
+module.exports = keyMirror({
+  LOGIN_SUCCESS: null,
+  LOGIN_FAILURE: null,
+  SAVECREDENTIAL:null,
+  CHANGE_VIEW:null,
+  GETROUTE_START:null,
+  GETROUTE_SUCCESS:null,
+  GETROUTE_FAILURE:null,
+  GETMYTICKETS_START:null,
+  GETMYTICKETS_SUCCESS:null,
+  GETMYTICKETS_FAILURE:null,
+  GETHISTORYTICKETS_START:null,
+  GETHISTORYTICKETS_SUCCESS:null,
+  GETHISTORYTICKETS_FAILURE:null,
+  BOOK_TICKET_START:null,
+  BOOK_TICKET_SUCCESS:null,
+  BOOK_TICKET_FAILURE:null,
+  BOOK_TICKET_INIT:null
+
+});

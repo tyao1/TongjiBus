@@ -1,0 +1,134 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+hr,input[type=search]{-moz-box-sizing:content-box;box-sizing:content-box}
+img,legend{border:0}
+legend,td,th{padding:0}
+body,ul{margin:0}
+a:active,a:hover,button{outline:0}
+#switches,.fixedbot,.login .tjbg,.modal{bottom:0;right:0}
+#AppTitle span,#detaiTicket,#switches li,.login,.modal .inner,.routelist li,.tempHolder,.timetable td{text-align:center}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100%}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent}
+abbr[title]{border-bottom:1px dotted}
+b,optgroup,strong{font-weight:700}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0;color:green}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{height:0}
+pre,textarea{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+table{border-collapse:collapse;border-spacing:0}
+body{background:#ECECEF;width:100%;color:#41464d;font:14px 'New York','Times New Roman','Apple LiSung Light','Microsoft YaHei Light','Microsoft YaHei',serif;overflow-x:auto;min-height:100%}
+#main{padding-top:60px}
+ul{padding:0;list-style:none}
+li.task label{padding:0 10px}
+#AppTitle{background:#fefefe;box-shadow:0 1px 4px rgba(0,0,0,.5);height:60px;width:100%;display:table;position:fixed;top:0;left:0;right:0}
+#AppTitle span{font-size:1.5em;display:table-cell;vertical-align:middle}
+#AppTitle span.long{font-size:1em}
+.fixedbot{position:fixed;left:0}
+.innerPage{padding:0 24px}
+.button{display:inline-block;padding:13px 17px;color:#fff;text-decoration:none;background:#C84343;margin:12px;border-radius:9px;font-size:1.4em;cursor:pointer}
+.button.realround{height:50px;line-height:50px;padding:0 47px;border-radius:25px}
+.button:hover{background:#ce5757}
+button{overflow:visible;background:0 0;border:none}
+input{padding:10px 12px;font-size:1.3em;margin:6px auto;border:1px solid #aaa;display:block}
+#switches li,.detailList li .time,.detailList li .words,.login button{display:inline-block}
+#goback{font-size:2.25em;position:absolute;left:0;top:0;height:100%;padding:0 16px}
+#switches,.login .tjbg,.modal{position:fixed}
+#logoPlaceHolder{width:80%;height:200px;margin:0 auto;background:linear-gradient(#73acee 5%,#73d6b2 95%)}
+.sticky .timetable.header{position:fixed;top:0;border-bottom:1px solid grey}
+.sticky .timetable.content{margin-top:99px}
+.timetable{background:#ECECEF;width:100%;min-width:400px;margin:auto;overflow:hidden}
+.timetable .light{background-color:#f8f8f8}
+.timetable .dark{background-color:#ECECEF}
+.timetable .weekday{color:red}
+.timetable .weekend{color:#094FB3}
+.timetable .bigstop{color:#287C12}
+.timetable .borderless{height:34px}
+.timetable .borderless th{border:none}
+.timetable th{border:1px solid grey;border-bottom:none;width:11%}
+.timetable td{background-color:#f8f8f8;width:11%;border:1px dotted grey;border-top:1px solid grey;border-bottom:1px solid grey}
+.timetable td:first-child{background-color:#ECECEF;border:1px solid grey}
+.padbotHome{padding-bottom:52px}
+.padbotHome .button{margin:0;width:100%;border-radius:0;text-align:center;padding:13px 0}
+.login{margin:0 auto}
+.login input{width:80%;box-sizing:border-box}
+.login button{margin-top:12px;background:#C84343;color:#fff;padding:12px;width:80%}
+.login button:hover{background:#ce5757}
+.login h3{min-height:25px}
+.login .minorLinks{padding:24px}
+.login .minorLinks a{color:#959A99;text-decoration:none;margin:0 24px;border-bottom:1px currentcolor dotted}
+.login .tjbg{background-image:url(../images/tjbg.png);background-repeat:no-repeat;background-size:contain;background-position:50% 50%;left:0;height:60vh;z-index:-12;width:100%;margin:0 auto 32px}
+#switches{left:0;box-shadow:1px 0 1px #aaa;z-index:1;background:#fff}
+#switches li{background-color:#fefefe;background-position:50% 10px;background-size:40px;background-repeat:no-repeat;padding:37px 0 9px;width:25%;height:100%;box-sizing:border-box;border-right:1px solid #abb;cursor:pointer;transition:all .3s ease;opacity:.65}
+.detailList li,.historyList li,.routelist li{transition:all .15s ease}
+#switches li:last-child{border-right:none}
+#switches li.active,#switches li:hover{background-color:#fff;opacity:1;color:#41464d;box-shadow:inset 0 5px #C84343;font-weight:700}
+#switches li.tab0{background-image:url(../images/tab0.png)}
+#switches li.tab1{background-image:url(../images/tab1.png)}
+#switches li.tab2{background-image:url(../images/tab2.png)}
+#switches li.tab3{background-image:url(../images/tab3.png)}
+.detailList li:hover,.historyList li:hover,.routelist li:hover{background:#fff}
+h3.divide{border-bottom:1px dotted grey;padding:13px 0}
+.routelist{font-size:1.2em;padding-bottom:66px}
+.routelist li{cursor:pointer;padding:14px 23px}
+.routelist li span{padding:0 6%}
+.historyList{font-size:1.2em;padding-bottom:66px}
+.historyList li{cursor:pointer;padding:14px 23px}
+.historyList li .time{font-size:.8em;color:grey}
+.historyList li .detail{float:left}
+.historyList li .button{float:right;font-size:16px;margin:0}
+.detailList li{cursor:pointer;padding:14px 23px}
+.detailList li .time{font-size:3em;padding:0 9px 0 0}
+.detailList li .rest{color:#efefef;border-radius:3px;display:inline}
+.detailList li .rest.no{color:grey}
+.detailList li .rest.limit{color:red}
+.detailList li .rest.ade{color:#287C12}
+.detailList li,.historyList li,.routelist li{border-bottom:1px solid #b3b3b3}
+.tempHolder{font-size:2em;display:block;padding-top:38vh;text-shadow:1px 1px 1px rgba(255,255,255,.8);color:#aaa}
+.tempHolder img{width:auto;height:auto}
+.tempHolder.face{padding-top:22vh}
+.tempHolder.index{margin:auto 10%;padding:0}
+.modal{visibility:hidden;top:0;left:0;display:table;width:100%;height:100%;align-content:center;transition:all .3s ease-in;pointer-events:none}
+.modal .inner{margin:auto;opacity:0;transform:translate3d(0,-100%,0);transition:all .3s ease-in-out;display:table-cell;vertical-align:middle}
+.modal .ok{background:#78BC72}
+.modal.active{background:rgba(255,255,255,.83);visibility:visible;transition:all .1s ease-in;pointer-events:auto;z-index:15}
+.modal.active .inner{opacity:1;transform:translate3d(0,0,0)}
+@keyframes moving{0%{background-position:0 0}
+100%{background-position:1000px 0}}
+@-webkit-keyframes moving{0%{background-position:0 0}
+100%{background-position:1000px 0}}
+#detaiTicket img{display:block;margin:12px auto 0}
+#detaiTicket .route{font-size:1.8em;padding:23px 0;margin:0 3%}
+#detaiTicket .route span{padding:0 2%}
+#detaiTicket .route .line{padding-top:.12em;font-size:.62em;color:grey}
+#detaiTicket .ticket_time{font-size:2em}
+#detaiTicket .serial{color:grey}
+#detaiTicket .card{display:inline-block;background:#fefefe;box-shadow:0 0 3px rgba(0,0,0,.5);padding:17px 19px;position:relative;overflow:hidden}
+#detaiTicket .card:before{content:'';position:absolute;top:0;left:0;width:1000px;height:12px;background-image:-webkit-linear-gradient(to right,#fa9300 2.61%,#66c9ee 2.61%,#66c9ee 4.35%,#c9c9c9 4.35%,#c9c9c9 6.96%,#82b964 6.96%,#82b964 9.13%,#d24d33 9.13%,#d24d33 11.3%,#fffbdb 11.3%,#fffbdb 13.91%,#2e77bb 13.91%,#2e77bb 16.52%,#6bd5b1 16.52%,#6bd5b1 17.82%,#f87aa0 17.82%,#f87aa0 19.12%,#c9c9c9 19.12%,#c9c9c9 21.29%,#72664e 21.29%,#72664e 23.9%,#ccd600 23.9%,#ccd600 26.07%,#fffbdb 26.07%,#fffbdb 28.68%,#df620e 28.68%,#df620e 31.29%,#993838 31.29%,#993838 33.03%,#ff9600 33.03%,#ff9600 34.33%,#d24d33 34.33%,#d24d33 36.94%,#8960a7 36.94%,#8960a7 39.55%,#82b964 39.55%,#82b964 42.16%,#f87aa0 42.16%,#f87aa0 43.36%,#d43f3f 43.36%,#d43f3f 45.63%,#668000 45.63%,#668000 47.8%,#ff9600 47.8%,#ff9600 50.41%,#8960a7 50.41%,#8960a7 51.71%,#c9c9c9 51.71%,#c9c9c9 53.88%,#993838 53.88%,#993838 55.18%,#ccd600 55.18%,#ccd600 57.79%,#668000 57.79%,#668000 59.53%,#f4cc13 59.53%,#f4cc13 60.83%,#72664e 60.83%,#72664e 63.44%,#fa9300 63.44%,#fa9300 66.05%,#66c9ee 66.05%,#66c9ee 67.35%,#c9c9c9 67.35%,#c9c9c9 69.96%,#82b964 69.96%,#82b964 71.7%,#ccd600 71.7%,#ccd600 74.31%,#fffbdb 74.31%,#fffbdb 76.92%,#2e77bb 76.92%,#2e77bb 79.53%,#6bd5b1 79.53%,#6bd5b1 80.4%,#f87aa0 80.4%,#f87aa0 81.7%,#c9c9c9 81.7%,#c9c9c9 83.87%,#fa9300 83.87%,#fa9300 86.04%,#66c9ee 86.04%,#66c9ee 87.78%,#c9c9c9 87.78%,#c9c9c9 90.39%,#82b964 90.39%,#82b964 92.56%,#ccd600 92.56%,#ccd600 95.17%,#fffbdb 95.17%,#fffbdb 97.34%,#fa9300 97.34%,#fa9300 100%);background-image:-moz-linear-gradient(to right,#fa9300 2.61%,#66c9ee 2.61%,#66c9ee 4.35%,#c9c9c9 4.35%,#c9c9c9 6.96%,#82b964 6.96%,#82b964 9.13%,#d24d33 9.13%,#d24d33 11.3%,#fffbdb 11.3%,#fffbdb 13.91%,#2e77bb 13.91%,#2e77bb 16.52%,#6bd5b1 16.52%,#6bd5b1 17.82%,#f87aa0 17.82%,#f87aa0 19.12%,#c9c9c9 19.12%,#c9c9c9 21.29%,#72664e 21.29%,#72664e 23.9%,#ccd600 23.9%,#ccd600 26.07%,#fffbdb 26.07%,#fffbdb 28.68%,#df620e 28.68%,#df620e 31.29%,#993838 31.29%,#993838 33.03%,#ff9600 33.03%,#ff9600 34.33%,#d24d33 34.33%,#d24d33 36.94%,#8960a7 36.94%,#8960a7 39.55%,#82b964 39.55%,#82b964 42.16%,#f87aa0 42.16%,#f87aa0 43.36%,#d43f3f 43.36%,#d43f3f 45.63%,#668000 45.63%,#668000 47.8%,#ff9600 47.8%,#ff9600 50.41%,#8960a7 50.41%,#8960a7 51.71%,#c9c9c9 51.71%,#c9c9c9 53.88%,#993838 53.88%,#993838 55.18%,#ccd600 55.18%,#ccd600 57.79%,#668000 57.79%,#668000 59.53%,#f4cc13 59.53%,#f4cc13 60.83%,#72664e 60.83%,#72664e 63.44%,#fa9300 63.44%,#fa9300 66.05%,#66c9ee 66.05%,#66c9ee 67.35%,#c9c9c9 67.35%,#c9c9c9 69.96%,#82b964 69.96%,#82b964 71.7%,#ccd600 71.7%,#ccd600 74.31%,#fffbdb 74.31%,#fffbdb 76.92%,#2e77bb 76.92%,#2e77bb 79.53%,#6bd5b1 79.53%,#6bd5b1 80.4%,#f87aa0 80.4%,#f87aa0 81.7%,#c9c9c9 81.7%,#c9c9c9 83.87%,#fa9300 83.87%,#fa9300 86.04%,#66c9ee 86.04%,#66c9ee 87.78%,#c9c9c9 87.78%,#c9c9c9 90.39%,#82b964 90.39%,#82b964 92.56%,#ccd600 92.56%,#ccd600 95.17%,#fffbdb 95.17%,#fffbdb 97.34%,#fa9300 97.34%,#fa9300 100%);background-image:-ms-linear-gradient(to right,#fa9300 2.61%,#66c9ee 2.61%,#66c9ee 4.35%,#c9c9c9 4.35%,#c9c9c9 6.96%,#82b964 6.96%,#82b964 9.13%,#d24d33 9.13%,#d24d33 11.3%,#fffbdb 11.3%,#fffbdb 13.91%,#2e77bb 13.91%,#2e77bb 16.52%,#6bd5b1 16.52%,#6bd5b1 17.82%,#f87aa0 17.82%,#f87aa0 19.12%,#c9c9c9 19.12%,#c9c9c9 21.29%,#72664e 21.29%,#72664e 23.9%,#ccd600 23.9%,#ccd600 26.07%,#fffbdb 26.07%,#fffbdb 28.68%,#df620e 28.68%,#df620e 31.29%,#993838 31.29%,#993838 33.03%,#ff9600 33.03%,#ff9600 34.33%,#d24d33 34.33%,#d24d33 36.94%,#8960a7 36.94%,#8960a7 39.55%,#82b964 39.55%,#82b964 42.16%,#f87aa0 42.16%,#f87aa0 43.36%,#d43f3f 43.36%,#d43f3f 45.63%,#668000 45.63%,#668000 47.8%,#ff9600 47.8%,#ff9600 50.41%,#8960a7 50.41%,#8960a7 51.71%,#c9c9c9 51.71%,#c9c9c9 53.88%,#993838 53.88%,#993838 55.18%,#ccd600 55.18%,#ccd600 57.79%,#668000 57.79%,#668000 59.53%,#f4cc13 59.53%,#f4cc13 60.83%,#72664e 60.83%,#72664e 63.44%,#fa9300 63.44%,#fa9300 66.05%,#66c9ee 66.05%,#66c9ee 67.35%,#c9c9c9 67.35%,#c9c9c9 69.96%,#82b964 69.96%,#82b964 71.7%,#ccd600 71.7%,#ccd600 74.31%,#fffbdb 74.31%,#fffbdb 76.92%,#2e77bb 76.92%,#2e77bb 79.53%,#6bd5b1 79.53%,#6bd5b1 80.4%,#f87aa0 80.4%,#f87aa0 81.7%,#c9c9c9 81.7%,#c9c9c9 83.87%,#fa9300 83.87%,#fa9300 86.04%,#66c9ee 86.04%,#66c9ee 87.78%,#c9c9c9 87.78%,#c9c9c9 90.39%,#82b964 90.39%,#82b964 92.56%,#ccd600 92.56%,#ccd600 95.17%,#fffbdb 95.17%,#fffbdb 97.34%,#fa9300 97.34%,#fa9300 100%);background-image:-o-linear-gradient(to right,#fa9300 2.61%,#66c9ee 2.61%,#66c9ee 4.35%,#c9c9c9 4.35%,#c9c9c9 6.96%,#82b964 6.96%,#82b964 9.13%,#d24d33 9.13%,#d24d33 11.3%,#fffbdb 11.3%,#fffbdb 13.91%,#2e77bb 13.91%,#2e77bb 16.52%,#6bd5b1 16.52%,#6bd5b1 17.82%,#f87aa0 17.82%,#f87aa0 19.12%,#c9c9c9 19.12%,#c9c9c9 21.29%,#72664e 21.29%,#72664e 23.9%,#ccd600 23.9%,#ccd600 26.07%,#fffbdb 26.07%,#fffbdb 28.68%,#df620e 28.68%,#df620e 31.29%,#993838 31.29%,#993838 33.03%,#ff9600 33.03%,#ff9600 34.33%,#d24d33 34.33%,#d24d33 36.94%,#8960a7 36.94%,#8960a7 39.55%,#82b964 39.55%,#82b964 42.16%,#f87aa0 42.16%,#f87aa0 43.36%,#d43f3f 43.36%,#d43f3f 45.63%,#668000 45.63%,#668000 47.8%,#ff9600 47.8%,#ff9600 50.41%,#8960a7 50.41%,#8960a7 51.71%,#c9c9c9 51.71%,#c9c9c9 53.88%,#993838 53.88%,#993838 55.18%,#ccd600 55.18%,#ccd600 57.79%,#668000 57.79%,#668000 59.53%,#f4cc13 59.53%,#f4cc13 60.83%,#72664e 60.83%,#72664e 63.44%,#fa9300 63.44%,#fa9300 66.05%,#66c9ee 66.05%,#66c9ee 67.35%,#c9c9c9 67.35%,#c9c9c9 69.96%,#82b964 69.96%,#82b964 71.7%,#ccd600 71.7%,#ccd600 74.31%,#fffbdb 74.31%,#fffbdb 76.92%,#2e77bb 76.92%,#2e77bb 79.53%,#6bd5b1 79.53%,#6bd5b1 80.4%,#f87aa0 80.4%,#f87aa0 81.7%,#c9c9c9 81.7%,#c9c9c9 83.87%,#fa9300 83.87%,#fa9300 86.04%,#66c9ee 86.04%,#66c9ee 87.78%,#c9c9c9 87.78%,#c9c9c9 90.39%,#82b964 90.39%,#82b964 92.56%,#ccd600 92.56%,#ccd600 95.17%,#fffbdb 95.17%,#fffbdb 97.34%,#fa9300 97.34%,#fa9300 100%);background-image:linear-gradient(to right,#fa9300 2.61%,#66c9ee 2.61%,#66c9ee 4.35%,#c9c9c9 4.35%,#c9c9c9 6.96%,#82b964 6.96%,#82b964 9.13%,#d24d33 9.13%,#d24d33 11.3%,#fffbdb 11.3%,#fffbdb 13.91%,#2e77bb 13.91%,#2e77bb 16.52%,#6bd5b1 16.52%,#6bd5b1 17.82%,#f87aa0 17.82%,#f87aa0 19.12%,#c9c9c9 19.12%,#c9c9c9 21.29%,#72664e 21.29%,#72664e 23.9%,#ccd600 23.9%,#ccd600 26.07%,#fffbdb 26.07%,#fffbdb 28.68%,#df620e 28.68%,#df620e 31.29%,#993838 31.29%,#993838 33.03%,#ff9600 33.03%,#ff9600 34.33%,#d24d33 34.33%,#d24d33 36.94%,#8960a7 36.94%,#8960a7 39.55%,#82b964 39.55%,#82b964 42.16%,#f87aa0 42.16%,#f87aa0 43.36%,#d43f3f 43.36%,#d43f3f 45.63%,#668000 45.63%,#668000 47.8%,#ff9600 47.8%,#ff9600 50.41%,#8960a7 50.41%,#8960a7 51.71%,#c9c9c9 51.71%,#c9c9c9 53.88%,#993838 53.88%,#993838 55.18%,#ccd600 55.18%,#ccd600 57.79%,#668000 57.79%,#668000 59.53%,#f4cc13 59.53%,#f4cc13 60.83%,#72664e 60.83%,#72664e 63.44%,#fa9300 63.44%,#fa9300 66.05%,#66c9ee 66.05%,#66c9ee 67.35%,#c9c9c9 67.35%,#c9c9c9 69.96%,#82b964 69.96%,#82b964 71.7%,#ccd600 71.7%,#ccd600 74.31%,#fffbdb 74.31%,#fffbdb 76.92%,#2e77bb 76.92%,#2e77bb 79.53%,#6bd5b1 79.53%,#6bd5b1 80.4%,#f87aa0 80.4%,#f87aa0 81.7%,#c9c9c9 81.7%,#c9c9c9 83.87%,#fa9300 83.87%,#fa9300 86.04%,#66c9ee 86.04%,#66c9ee 87.78%,#c9c9c9 87.78%,#c9c9c9 90.39%,#82b964 90.39%,#82b964 92.56%,#ccd600 92.56%,#ccd600 95.17%,#fffbdb 95.17%,#fffbdb 97.34%,#fa9300 97.34%,#fa9300 100%);animation:moving 10s linear infinite;-webkit-animation:moving 10s linear infinite}
+#detaiTicket .user{text-align:left}
+#detaiTicket .user .username{font-size:1.5em;padding-top:12px}
+#detaiTicket .user .userid{color:grey;padding-top:2px}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+* html .clearfix{height:1%}
+.clearfix{display:block}

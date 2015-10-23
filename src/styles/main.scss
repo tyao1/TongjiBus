@@ -1,0 +1,651 @@
+@import "./normalize.css";
+
+/*
+  Variables
+*/
+
+$primary-color: green;
+
+$button-main:#C84343;
+$button-secondary:#78BC72;
+
+$bgcolor:#ECECEF;
+
+$bgcolorlight:#f8f8f8;
+
+$table-weekday:#FF0000;
+$table-weekend:#094FB3;
+$table-bigstop:#287C12;
+
+$fontcolor:#41464d;
+$fontcolordim:#959A99;
+
+/*
+  Basics and Typography
+*/
+html {
+  height:100%;
+}
+
+body{
+  background:$bgcolor;
+  width:100%;
+  color:$fontcolor;
+  font: 14px 'New York','Times New Roman','Apple LiSung Light','Microsoft YaHei Light','Microsoft YaHei',serif;
+  overflow-x:auto;
+  min-height: 100%;
+}
+#main{
+  padding-top:60px;
+}
+
+ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+li.task {
+
+  label {
+    padding: 0 10px;
+  }
+}
+
+/*
+  Layout
+*/
+#AppTitle{
+  background:#fefefe;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  height: 60px;
+  width:100%;
+  /*display: flex;*/
+  display:table;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  span{
+    font-size: 1.5em;
+    /*margin:auto;*/
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    &.long{
+      font-size:1em;
+    }
+  }
+}
+
+
+.fixedbot{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0
+}
+
+.innerPage{
+  padding:0 24px;
+
+}
+
+
+
+/*
+  Controls
+*/
+
+.button{
+  display: inline-block;
+  padding:13px 17px;
+  color:white;
+  text-decoration:none;
+  background:$button-main;
+  margin:12px;
+  border-radius:9px;
+  font-size:1.4em;
+  cursor:pointer;
+  &.realround{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 47px;
+    border-radius: 25px;
+  }
+  &:hover{
+    background:lighten($button-main,5);
+  }
+}
+
+
+button{
+  background:none;
+  border:none;
+  outline:none;
+}
+
+input{
+  padding:10px 12px;
+  font-size:1.3em;
+  margin:6px auto;
+  border:1px solid #aaa;
+  display: block;
+}
+
+#goback{
+  font-size:2.25em;
+  position:absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  padding: 0 16px;
+}
+
+
+
+/*
+  Home
+*/
+
+//test
+#logoPlaceHolder{
+  width:80%;
+  height:200px;
+  margin:0 auto;
+  background:linear-gradient(#73acee 5%, #73d6b2 95%);
+
+}
+
+.sticky .timetable{
+  &.header{
+    position:fixed;
+    top:0;
+    border-bottom: 1px solid grey;
+  }
+  &.content {
+    margin-top:65+34px;
+  }
+}
+
+.timetable{
+  background:$bgcolor;
+  width: 100%;
+  min-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  .light{
+    background-color: $bgcolorlight;
+  }
+  .dark{
+    background-color:$bgcolor;
+  }
+  .weekday{
+    color:$table-weekday;
+  }
+  .weekend{
+    color:$table-weekend;
+  }
+  .bigstop{
+    color:$table-bigstop;
+  }
+  .borderless{
+    height: 34px;
+    th{
+      border:none;
+    }
+  }
+  th{
+    border:1px solid grey;
+    border-bottom: none;
+    width:11%;
+  }
+  td{
+    background-color: $bgcolorlight;
+    width:11%;
+    text-align: center;
+    border:1px dotted grey;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+  }
+  td:first-child{
+    background-color:$bgcolor;
+    border:1px solid grey;
+  }
+
+}
+.padbotHome{
+  padding-bottom: 52px;
+
+  .button{
+    margin:0;
+    width:100%;
+    border-radius: 0;
+    text-align: center;
+    padding: 13px 0;
+  }
+}
+
+
+
+/*
+  Login
+*/
+
+.login{
+
+  text-align: center;
+  margin:0 auto;
+  input{
+    width:80%;
+    box-sizing: border-box;
+  }
+  button{
+    display:inline-block;
+    margin-top:12px;
+
+    background:$button-main;
+    color:white;
+    padding:12px;
+    width:80%;
+    &:hover{
+      background:lighten($button-main,5);
+    }
+  }
+  h3{
+    min-height:25px;
+  }
+  .minorLinks{
+    padding:24px;
+    a{
+      color:$fontcolordim;
+      text-decoration: none;
+      margin:0 24px;
+      border-bottom: 1px currentcolor dotted;
+    }
+  }
+
+  .tjbg{
+    background-image:  url('../images/tjbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:  50% 50%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    height: 60vh;
+    z-index: -12;
+    width: 100%;
+    margin: 0 auto 32px;
+  }
+}
+
+
+/*
+  Bottom Bar
+*/
+@mixin switchesbg($index) {
+  &.tab#{$index} {
+    background-image: url('../images/tab#{$index}.png');
+  }
+}
+
+#switches{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  box-shadow: 1px 0 1px mix($bgcolor,#aaa,.1);
+  z-index: 1;
+  background:white;
+  li{
+    background-color:#fefefe;
+    background-position: 50% 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 37px 0 9px;
+    display: inline-block;
+    width:25%;
+    text-align: center;
+    height:100%;
+    box-sizing: border-box;
+    border-right:1px solid mix($bgcolor,#abb,.1);
+    cursor: pointer;
+    transition:all .3s ease;
+    opacity:.65;
+    &:last-child{
+      border-right:none;
+    }
+
+    &.active,&:hover{
+      background-color:white;
+      opacity:1;
+      color:$fontcolor;
+      box-shadow: inset 0 5px $button-main;
+      font-weight: bold;
+    }
+    @include switchesbg(0);
+    @include switchesbg(1);
+    @include switchesbg(2);
+    @include switchesbg(3);
+  }
+
+}
+
+/*
+  info
+*/
+h3.divide{
+  border-bottom:1px dotted grey;
+  padding: 13px 0;
+}
+
+/*
+  get tickets
+*/
+.routelist{
+  font-size:1.2em;
+  padding-bottom:66px;
+  li{
+    transition:all .15s ease;
+    cursor: pointer;
+    padding:14px 23px;
+    text-align: center;
+    span{
+      padding:0 6%;
+    }
+    &:hover{
+      background:white;
+    }
+  }
+}
+
+/*
+history
+*/
+.historyList{
+  font-size:1.2em;
+  padding-bottom:66px;
+  li{
+    .time{
+      font-size:.8em;
+      color:grey;
+    }
+    transition:all .15s ease;
+    cursor: pointer;
+    padding:14px 23px;
+    &:hover{
+      background:white;
+    }
+
+    .detail{
+      float:left;
+    }
+    .button{
+      float:right;
+      font-size:16px;
+      margin:0;
+    }
+  }
+}
+
+/*
+  detial list
+*/
+.detailList{
+
+  li{
+    .time{
+      font-size:3em;
+      display: inline-block;
+      padding:0 9px 0 0;
+    }
+    .words{
+      display:inline-block;
+
+    }
+    .rest{
+      color:#efefef;
+      border-radius: 3px;
+      display: inline;
+      &.no{
+        color: grey;
+      }
+      &.limit{
+        color: $table-weekday;
+      }
+      &.ade{
+        color: $table-bigstop;
+      }
+    }
+    transition:all .15s ease;
+    cursor: pointer;
+    padding:14px 23px;
+    &:hover{
+      background:white;
+    }
+  }
+}
+
+
+.routelist,.historyList,.detailList{
+  li{
+    border-bottom:1px solid #b3b3b3;
+    //background:lighten($bgcolor,3%);
+    &:last-child{
+      //border-bottom: none;
+    }
+  }
+}
+/*
+tempHolder
+*/
+.tempHolder{
+  font-size:2em;
+  display: block;
+  padding-top:38vh;
+  text-align:center;
+  //span{
+    text-shadow: 1px 1px 1px rgba(255,255,255,.8);
+    color: #aaa;
+  //}
+  img{
+    width:auto;
+    height:auto;
+  }
+
+  &.face{
+    padding-top:21%;
+    padding-top:22vh;
+  }
+  &.index{
+    margin:auto 10%;
+    padding:0;
+  }
+}
+
+
+/*
+Modal
+*/
+.modal{
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: table;
+  width:100%;
+  height:100%;
+  align-content: center;
+  transition:all .3s ease-in;
+  pointer-events: none;
+  .inner{
+    margin:auto;
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+    transition:all .3s ease-in-out;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    h2,p{
+
+    }
+  }
+
+  .ok{
+    background:$button-secondary;
+  }
+  //active
+  &.active{
+    background: rgba(255,255,255,.83);
+    visibility: visible;
+    transition:all .1s ease-in;
+    pointer-events:auto;
+    z-index: 15;
+    .inner {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+
+    }
+  }
+}
+
+
+/*
+Mixin Stripe
+*/
+@mixin stripes($colors, $direction: "to bottom") {
+  $stripe-width: 100% / length($colors);
+  $auto:         if( type-of(nth($colors, 1)) == list, false, true );
+  $gradient:     ();
+
+  @for $i from 1 through length($colors) {
+    $item: nth($colors, $i);
+    $dump: ();
+
+    @if $auto == true {
+      $dump: $item $stripe-width * ($i - 1), $item $stripe-width * $i;
+    }
+
+    @else {
+      @if $i > 1 {
+        $previous-item: nth($colors, $i - 1);
+        $dump: append($dump, nth($item, 1) nth($previous-item, 2));
+      }
+      $dump: append($dump, $item);
+    }
+
+    $gradient: join($gradient, $dump, comma);
+  }
+  background-image: -webkit-linear-gradient($direction, $gradient);
+  background-image:    -moz-linear-gradient($direction, $gradient);
+  background-image:     -ms-linear-gradient($direction, $gradient);
+  background-image:      -o-linear-gradient($direction, $gradient);
+  background-image:         linear-gradient($direction, $gradient);
+}
+
+@keyframes moving {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@-webkit-keyframes moving {
+   0% {
+     background-position: 0 0;
+   }
+   100% {
+     background-position: 1000px 0;
+   }
+}
+
+
+/*
+Detail ticket
+*/
+#detaiTicket{
+  img{
+    display: block;
+    margin:12px auto 0;
+  }
+  text-align: center;
+  .route{
+    font-size:1.8em;
+    padding:23px 0;
+    margin:0 3%;
+    span{
+      padding:0 2%;
+    }
+    .line{
+      padding-top:.12em;
+      font-size:.62em;
+      color:grey;
+    }
+  }
+  .ticket_time{
+
+    font-size: 2em;
+  }
+  .serial{
+    color:grey;
+  }
+
+  .card{
+    display: inline-block;
+    background:mix($bgcolor,#fff,.15);
+    box-shadow: 0 0 3px rgba(0,0,0,.5);
+    padding: 17px 19px;
+    position:relative;
+    overflow: hidden;
+  }
+  $treehouse-hard: #fa9300 2.61%, #66c9ee 4.35%, #c9c9c9 6.96%, #82b964 9.13%, #d24d33 11.3%, #fffbdb 13.91%, #2e77bb 16.52%, #6bd5b1 17.82%, #f87aa0 19.12%, #c9c9c9 21.29%, #72664e 23.9%, #ccd600 26.07%, #fffbdb 28.68%, #df620e 31.29%, #993838 33.03%, #ff9600 34.33%, #d24d33 36.94%, #8960a7 39.55%, #82b964 42.16%, #f87aa0 43.36%, #d43f3f 45.63%, #668000 47.8%, #ff9600 50.41%, #8960a7 51.71%, #c9c9c9 53.88%, #993838 55.18%, #ccd600 57.79%, #668000 59.53%, #f4cc13 60.83%, #72664e 63.44%, #fa9300 66.05%, #66c9ee 67.35%, #c9c9c9 69.96%, #82b964 71.7%, #ccd600 74.31%, #fffbdb 76.92%, #2e77bb 79.53%, #6bd5b1 80.4%, #f87aa0 81.7%, #c9c9c9 83.87%, #fa9300 86.04%, #66c9ee 87.78%, #c9c9c9 90.39%, #82b964 92.56%, #ccd600 95.17%, #fffbdb 97.34%, #fa9300 100%;
+
+  .card:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:1000px;
+    height:12px;
+
+    @include stripes($treehouse-hard, to right);
+    animation: moving 10s linear infinite;
+    -webkit-animation: moving 10s linear infinite;
+  }
+
+  .user{
+    text-align:left;
+    .username{
+      font-size:1.5em;
+      padding-top:12px;
+    }
+    .userid{
+      color:grey;
+      padding-top:2px;
+    }
+  }
+
+
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
